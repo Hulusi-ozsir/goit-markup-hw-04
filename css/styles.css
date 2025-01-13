@@ -180,7 +180,17 @@ body ul li {
   width: 266px;
   height: 260px;
 }
-.first .first-main-list .first-list .icon-first {
+.first .first-main-list .first-list .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+.first .first-main-list .first-list .icons .icon-first {
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -188,7 +198,7 @@ body ul li {
   height: 112px;
   padding: 24px 90px;
 }
-.first .first-main-list .first-list .icon-first .use-first {
+.first .first-main-list .first-list .icons .icon-first .use-first {
   width: 64px;
   height: 64px;
 }
@@ -232,6 +242,10 @@ body ul li {
 }
 .second .team-main-list .team-list {
   width: 260px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 .second .team-main-list .team-list .team-text {
   background-color: #ffffff;
@@ -242,6 +256,7 @@ body ul li {
   align-items: center;
   flex-direction: column;
   padding-bottom: 16px;
+  padding: 32px 0;
 }
 .second .team-main-list .team-list .team-h {
   font-size: 20px;
@@ -260,7 +275,7 @@ body ul li {
   color: #434455;
   margin-top: -15px;
 }
-.second .team-main-list .team-list .team-text .team-social {
+.second .team-main-list .team-list .team-text .social .team-social {
   width: 260px;
   display: flex;
   justify-content: center;
