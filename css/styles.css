@@ -281,7 +281,7 @@ body ul li {
   color: #434455;
   margin-top: -15px;
 }
-.second .team-main-list .team-list .social .team-social {
+.second .team-main-list .team-list .team-social {
   width: 260px;
   display: flex;
   justify-content: center;
@@ -291,12 +291,12 @@ body ul li {
   margin: 0;
   gap: 24px;
 }
-.second .team-main-list .team-list .social .team-social-list {
+.second .team-main-list .team-list .team-social-list {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.second .team-main-list .team-list .social .team-social-list .social-text {
+.second .team-main-list .team-list .team-social-list .social-text {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -308,7 +308,6 @@ body ul li {
 .second
   .team-main-list
   .team-list
-  .social
   .team-social-list
   .social-text:hover {
   background-color: #404bbf;
@@ -316,12 +315,11 @@ body ul li {
 .second
   .team-main-list
   .team-list
-  .social
   .team-social-list
   .social-text:focus {
   background-color: #404bbf;
 }
-.second .team-main-list .team-list .social .team-social-list .social-text .icon-social {
+.second .team-main-list .team-list .team-social-list .social-text .icon-social {
   fill: #f4f4fd;
   width: 16px;
   height: 16px;
