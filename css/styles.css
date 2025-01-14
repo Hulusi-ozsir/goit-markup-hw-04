@@ -305,18 +305,10 @@ body ul li {
   align-items: center;
   justify-content: center;
 }
-.second
-  .team-main-list
-  .team-list
-  .team-social-list
-  .social-text:hover {
+.second .team-main-list .team-list .team-social-list .social-text:hover {
   background-color: #404bbf;
 }
-.second
-  .team-main-list
-  .team-list
-  .team-social-list
-  .social-text:focus {
+.second .team-main-list .team-list .team-social-list .social-text:focus {
   background-color: #404bbf;
 }
 .second .team-main-list .team-list .team-social-list .social-text .icon-social {
@@ -351,6 +343,39 @@ body ul li {
   column-gap: 24px;
   row-gap: 48px;
 }
+.third .port-main-list .port-list {
+}
+.third .port-main-list .port-list:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.third .port-main-list .port-list:hover::after {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.third .port-main-list .port-list:hover .img-p{
+    transform: translateY(0%);
+}
+.third .port-main-list .port-list .port-img{
+    position: relative;
+    overflow: hidden;    
+}
+.third .port-main-list .port-list .img-p{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    margin: 0;
+}
+.third .port-main-list .port-list .img-p::after{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
 .third .port-main-list .port-title {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -375,42 +400,13 @@ body ul li {
   margin: 10px;
   margin-bottom: 8px;
 }
-/*resimlerin üstüne gelince açıklama çıkacak*/
-.image {
-  display: block;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: opacity 3000s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.image::after {
-  content: "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 360px;
-  height: 300px;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  text-align: center;
-  opacity: 0;
-  z-index: 1;
-}
-.image:hover::after {
-  opacity: 1;
-}
 .end .container {
   background-color: #2e2f42;
   padding: 100px 160px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
   width: 1440px;
   height: 312px;
   gap: 120px;
@@ -419,6 +415,7 @@ body ul li {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-right: 120px;
 }
 .end .logo-end {
   font-size: 18px;
@@ -448,8 +445,9 @@ body ul li {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
-.end .end-social .social .end-social {
+.end .end-social .end-social-main-list {
   width: 260px;
   display: flex;
   justify-content: center;
@@ -457,19 +455,31 @@ body ul li {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 24px;
+  gap: 16px;
 }
 
-.end .end-social .social .end-social .end-social-list {
+.end .end-social .end-social-main-list .end-social-list {
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-
-.end .end-social .social .end-social .end-social-list .icon-social {
-  width: 16px;
-  height: 16px;
-  margin-top: 10px;
-  margin-left: 12px;
+.end .end-social .end-social-main-list .end-social-list .end-social-text{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end .end-social .end-social-main-list .end-social-list .end-social-text:hover{
+    background-color: #31d0aa;
+}
+.end .end-social .end-social-main-list .end-social-list .end-social-text:focus{
+    background-color: #31d0aa;
+}
+.end .end-social .end-social-main-list .end-social-list .end-social-text .icon-social {
+    fill: #f4f4fd;
+    
 }
