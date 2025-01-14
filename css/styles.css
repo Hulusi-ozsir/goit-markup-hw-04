@@ -152,12 +152,9 @@ body ul li {
   border: none;
   cursor: pointer;
 }
-.hero .container .button::after {
+.hero .container .button:hover {
   background-color: red;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero .container .button:hover::after {
-  background-color: aqua;
 }
 .first .container {
   display: flex;
@@ -307,9 +304,11 @@ body ul li {
 }
 .second .team-main-list .team-list .team-social-list .social-text:hover {
   background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second .team-main-list .team-list .team-social-list .social-text:focus {
   background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second .team-main-list .team-list .team-social-list .social-text .icon-social {
   fill: #f4f4fd;
@@ -344,7 +343,7 @@ body ul li {
   row-gap: 48px;
 }
 .third .port-main-list .port-list {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .third .port-main-list .port-list:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -353,30 +352,27 @@ body ul li {
 .third .port-main-list .port-list:hover::after {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.third .port-main-list .port-list:hover .img-p{
-    transform: translateY(0%);
+.third .port-main-list .port-list:hover .img-p {
+  transform: translateY(0%);
 }
-.third .port-main-list .port-list .port-img{
-    position: relative;
-    overflow: hidden;    
+.third .port-main-list .port-list .port-img {
+  position: relative;
+  overflow: hidden;
 }
-.third .port-main-list .port-list .img-p{
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    margin: 0;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-.third .port-main-list .port-list .img-p::after{
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+.third .port-main-list .port-list .img-p {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  margin: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .third .port-main-list .port-title {
   padding: 32px 16px;
@@ -440,8 +436,9 @@ body ul li {
   line-height: 1.5;
   letter-spacing: 0.02;
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
-.end .end-social .end-social-title {
+.end .end-social .end-social-p {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -458,31 +455,37 @@ body ul li {
   padding: 0;
   margin: 0;
   gap: 16px;
+  margin-bottom: 16px;
 }
-
 .end .end-social .end-social-main-list .end-social-list {
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin-bottom: 16px;
 }
-.end .end-social .end-social-main-list .end-social-list .end-social-text{
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.end .end-social .end-social-main-list .end-social-list .end-social-text {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
 }
-.end .end-social .end-social-main-list .end-social-list .end-social-text:hover{
-    background-color: #31d0aa;
+.end .end-social .end-social-main-list .end-social-list .end-social-text:hover {
+  background-color: #31d0aa;
 }
-.end .end-social .end-social-main-list .end-social-list .end-social-text:focus{
-    background-color: #31d0aa;
+.end .end-social .end-social-main-list .end-social-list .end-social-text:focus {
+  background-color: #31d0aa;
 }
-.end .end-social .end-social-main-list .end-social-list .end-social-text .icon-social {
-    fill: #f4f4fd;
-    
+.end
+  .end-social
+  .end-social-main-list
+  .end-social-list
+  .end-social-text
+  .icon-social {
+  fill: #f4f4fd;
 }
