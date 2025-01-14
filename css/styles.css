@@ -151,7 +151,6 @@ body ul li {
   margin: 0 auto;
   border: none;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero .container .button:hover {
   background-color: #404bbf;
@@ -416,7 +415,6 @@ body ul li {
   justify-content: center;
   flex-direction: column;
   margin-right: 120px;
-  margin-bottom: 16px;
 }
 .end .logo-end {
   font-size: 18px;
